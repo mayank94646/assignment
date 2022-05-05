@@ -1,6 +1,6 @@
 export const fetchMovies = (params = {}) => {
 
-    let url = new URL('http://www.omdbapi.com/')
+    let url = new URL('https://www.omdbapi.com/')
     url.search = new URLSearchParams(params)
 
     return fetch(url)

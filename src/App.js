@@ -14,8 +14,7 @@ function App() {
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/movies' element={<RequireAuth><HomePage /></RequireAuth>} />
           <Route exact path='/movies/:id' element={<RequireAuth>< MovieDetails /></RequireAuth>} />
-          <Route path="*" element={<Navigate to="/movies" replace />}
-          />
+          <Route path="*" element={<Navigate to="/movies" replace />}/>
         </Routes>
       </div>
     </BrowserRouter >

@@ -1,0 +1,23 @@
+.movie-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    width: 100%
+}
+
+.movie-details-poster-wrapper {
+    padding: 1rem;
+}
+
+.movie-details-poster-wrapper img {
+    border-radius: 1rem;
+    height: 37rem;
+    width: 25rem;
+}
+
+.movie-details-desc {
+    width: 40rem;
+    padding: 1rem;
+}

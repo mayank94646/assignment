@@ -1,0 +1,15 @@
+.home-page .home-page-failure-message {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5rem 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+
+.home-page .movies-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}

@@ -1,0 +1,77 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login .login-left-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    color: white;
+    background-color: #4d55ff;
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.login .login-right-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+}
+
+.login .login-right-panel .login-form {
+    width: 26rem;
+    padding: 2rem;
+}
+
+.login .login-right-panel .login-form h1 {
+    text-align: center;
+    color: #757775;
+    letter-spacing: 0.1rem;
+}
+
+.login .login-right-panel .login-form input {
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4d55ff;
+    padding: 0.25rem;
+}
+
+.login .login-right-panel .login-form button {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 100%;
+    color: #4d55ff;
+    background-color: white;
+    border: 1px solid #4d55ff;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    letter-spacing: 0.07rem;
+    border-radius: 1rem;
+}
+
+.login .login-right-panel .login-form button:hover {
+    cursor: pointer;
+}
+
+.login .login-right-panel .login-form .login-form-validation-message {
+    color: #e7452f;
+    margin: 0.25rem;
+}
+
+/** Media Query for small screen devices */
+@media (max-width: 768px) {
+    .login .login-left-panel {
+        display: none;
+    }
+}

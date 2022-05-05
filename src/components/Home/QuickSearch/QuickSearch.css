@@ -1,0 +1,52 @@
+.quick-search {
+    padding: 1rem 0rem 0.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 4.5rem;
+    background-color: white;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.quick-search .quick-search-input {
+    font-size: 1rem;
+    width: 40%;
+    border: none;
+    border-bottom: 1px solid #4d55FF;
+    padding: 0.3rem;
+    outline: none;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.quick-search .toggle-dropdown-invert {
+    display: inline-block;
+    transform: rotateX(180deg);
+    cursor: pointer;
+    padding-top: 0.3rem;
+}
+
+.quick-search .quick-search-list {
+    width: 41%;
+    position: absolute;
+    top: 3rem;
+    background-color: #e4e4e4;
+    border-radius: 0.5rem;
+    animation: fade 0.5s linear forwards;
+}
+
+
+.quick-search-list-item {
+    cursor: pointer;
+    color: black;
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.quick-search-list-item:hover {
+    color: #4d55FF;
+}

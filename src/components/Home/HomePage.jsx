@@ -9,15 +9,13 @@ import { getLocalStorage, setLocalStorage } from '../../common/commonMethods.jsx
 /** Import CSS */
 import './HomePage.css';
 
-const loggedinuserKey = '4aa9f453';
-
 export default function HomePage({ user }) {
 
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
         fetchMovies({
-            apikey: loggedinuserKey,
+            apikey: process.env.REACT_APP_API_KEY,
             s: 'lord'
         })
             .then((fetchedMovies) => {
@@ -33,7 +31,7 @@ export default function HomePage({ user }) {
         saveNewSearch(searchedInput);
 
         fetchMovies({
-            apikey: loggedinuserKey,
+            apikey: process.env.REACT_APP_API_KEY,
             s: searchedInput
         })
             .then((fetchedMovies) => {

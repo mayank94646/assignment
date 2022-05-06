@@ -5,7 +5,6 @@ import { fetchMovies } from '../../../dataLoaders/MoviesDataLoader.jsx'
 
 /** Import CSS */
 import './MovieDetails.css';
-const loggedinuserKey = '4aa9f453';
 
 export default function MovieDetails() {
 
@@ -15,7 +14,7 @@ export default function MovieDetails() {
 
     useEffect(() => {
         fetchMovies({
-            apikey: loggedinuserKey,
+            apikey: process.env.REACT_APP_API_KEY,
             i: id
         })
             .then((fetchedMovie) => {

@@ -1,6 +1,6 @@
 export const fetchMovies = (params = {}) => {
 
-    let url = new URL('https://www.omdbapi.com/')
+    let url = new URL(process.env.REACT_APP_MOVIE_URL)
     url.search = new URLSearchParams(params)
 
     return fetch(url)

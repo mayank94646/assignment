@@ -1,6 +1,7 @@
 # Netomi Movies Assignment
 
-Hosted Link - (https://dynamic-cuchufli-db9dd1.netlify.app/)
+Hosted Link - (https://dynamic-cuchufli-db9dd1.netlify.app/) 
+Credentials - Bret, Antonette
 
 # Setup
 
